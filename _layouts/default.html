@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+{%- if page.collection -%}
+{%- assign pages = site[page.collection] -%}
+{%- else -%}
+{%- assign default_edition = "edition_" | append: site.current_year -%}
+{%- assign pages = site[default_edition] -%}
+{%- endif -%}
+{%- assign edition = site.collections | where: "label", page.collection | first -%}
+{%- assign year = page.collection | split: "_" -%}
+{%- assign year = year[1] -%}
+<body>
+<div class="wrapper">
+    <div class="slide-in" id="slide-in">
+        <div class="slide-in-content">
+            <a style="float: right;" onclick="slide();"><strong>x</strong></a><br/>
+            <ul>
+                {%- for page in pages %}
+                {% if page.title and page.menu_show == true %}<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>{% endif %}
+                {%- endfor -%}
+                {%- for page in site.pages %}
+                {% if page.title %}<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>{% endif %}
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header>
+    <a href="{{ '/' | append: year | relative_url }}"><h1>{{ site.title }} {{ year }}</h1></a>
+    <p>{{ page.description | default: site.description }}</p>
+</header>
+
+<div id="banner">
+    {%- if page.collection -%}
+    <span id="dates">{{ edition.venue }} &bullet; {{ edition.dates }}</span>
+    {%- endif -%}
+    <span id="logo"></span>
+    <a class="button menubutton" id="menubutton" onclick="slide();"><img style="height:15px;" src="{{ '/assets/img/menu.svg' | relative_url }}"/></a>
+</div><!-- end banner -->
+
+<div class="wrapper">
+    <nav>
+        <ul>
+            {%- for page in pages %}
+            {% if page.title and page.menu_show == true %}<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>{% endif %}
+            {%- endfor -%}
+            {%- for page in site.pages %}
+            {% if page.title %}<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>{% endif %}
+            {%- endfor -%}
+        </ul>
+    </nav>
+    <section>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+
+    </section>
+    <footer>
+        <p>
+            <small>Made with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &bullet;
+            Based on <a href="https://github.com/pages-themes/leap-day" target="_blank">Leap Day template</a></small><br/>
+            <small><a href="{{ site.github.repository_url }}" target="_blank">Contribute <img style="height:10px" src="{{ '/assets/img/octocat-logo.svg' | relative_url }}"></a></small>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

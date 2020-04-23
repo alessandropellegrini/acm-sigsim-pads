@@ -1,0 +1,31 @@
+{%- comment -%}
+
+Use this include in the following way. It is possible to specify
+any number of additional lines, to sketch more precise affiliations,
+or whatever is needed, without changing the include.
+Pictures should be placed in /assets/img/people/.
+
+{% assign moreinfo = "This is the very first line|This is the second|And that's the third" | split: '|' %}
+
+{% include guy.html     name="Guybrush Threepwood"
+                        picture="Guy.brush"
+                        url="http://vodoo.lady"
+                        role="Pirate"
+                        additional_lines=moreinfo %}
+
+{%- endcomment -%}
+
+<div class="guy">
+    <div class="picture">
+        <img alt="{{ include.name }}" src="{{ '/assets/img/people/' | append: include.picture | relative_url }}" />
+    </div>
+    <div class="info">
+        <p>
+            <a href="{{ include.url }}" target="_blank">{{ include.name }}</a><br/>
+            {{ include.role }}<br/>
+            {% for line in include.additional_lines %}
+            {{ line }}<br/>
+            {%- endfor -%}
+        </p>
+    </div>
+</div>

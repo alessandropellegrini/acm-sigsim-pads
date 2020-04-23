@@ -1,0 +1,214 @@
+title: "SIGSIM PADS"
+description: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
+
+# Change this to the year which shall appear as "default" in the website
+current_year: 2020
+
+# The following array is used to populate previous editions.
+# If the edition is hosted by this site, a corresponding _edition_20xx
+# folder is expected to be found, and `output: true` should be set.
+# Otherwise, `site` should point to the previous webpage (if available).
+# `proceedings` should point to the digital library page of the proceedings (if availbale).
+collections:
+  edition_2021:
+    output: true
+    permalink: /2021/:name
+    venue: "Somewhere in the world"
+    dates: "June 1-2, 2021"
+  edition_2020:
+    output: true
+    permalink: /2020/:name
+    venue: "Miami, FL, USA"
+    dates: "June 15-17, 2020"
+  edition_2019:
+    proceedings: https://proceedings.com
+    website: https://web.archive.org/web/20190929201841/https://www.acm-sigsim-pads.org/
+    venue: "Somewhere in the world"
+    dates: "June 15-17, 2020"
+  edition_2018:
+    proceedings: https://dl.acm.org/citation.cfm?id=3200921
+    website: https://web.archive.org/web/20170530085708/http://acm-sigsim-pads.org/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2017"
+  edition_2017:
+    proceedings: http://dl.acm.org/citation.cfm?id=3064911
+    website: https://web.archive.org/web/20170530085708/http://acm-sigsim-pads.org/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2017"
+  edition_2016:
+    proceedings: https://dl.acm.org/citation.cfm?id=2901378
+    website: https://web.archive.org/web/20160504044541/http://www.acm-sigsim-pads.org:80/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2016"
+  edition_2015:
+    proceedings: https://dl.acm.org/citation.cfm?id=2769458
+    website: https://web.archive.org/web/20150406112909/http://www.acm-sigsim-pads.org:80/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2015"
+  edition_2014:
+    proceedings: https://dl.acm.org/citation.cfm?id=2601381
+    website: https://web.archive.org/web/20140329232454/http://www.acm-sigsim-pads.org:80/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2014"
+  edition_2013:
+    proceedings: https://dl.acm.org/citation.cfm?id=2486092
+    website: https://web.archive.org/web/20130218032000/http://www.acm-sigsim-pads.org:80/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2013"
+  edition_2012:
+    title: 26th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=2372596
+    website: https://web.archive.org/web/20131028124516/http://pads2012.cis.fiu.edu/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2012"
+  edition_2011:
+    title: 25th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=5936496
+    website: https://sites.google.com/site/pads2011/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2011"
+  edition_2010:
+    title: 24th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=5471198
+    website: https://web.archive.org/web/20111007015947/http://www.pads-workshop.org/pads2010/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2010"
+  edition_2009:
+    title: 23rd ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=1577959
+    website: https://web.archive.org/web/20090510001327/http://www.cs.virginia.edu/pads2009/index.htm
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2009"
+  edition_2008:
+    title: 22nd ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://web.archive.org/web/20090403135124/https://www.cis.fiu.edu/pads2008/
+    website: https://example.com
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2008"
+  edition_2007:
+    title: 21st ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=1248822
+    website: http://pads07.org/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2007"
+  edition_2006:
+    title: 20th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=1136644
+    website: https://web.archive.org/web/20171117011056/http://pdcc.ntu.edu.sg/pads2006/
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2006"
+  edition_2005:
+    title: 19th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=1069810
+    website: https://web.archive.org/web/20161103151756/http://pads-workshop.org/pads2005/index.html
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2005"
+  edition_2004:
+    title: 18th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=1013329
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2004"
+  edition_2003:
+    title: 17th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=824475
+    website: https://web.archive.org/web/20041215141621/http://pads-workshop.org/pads2003/index.html
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2003"
+  edition_2002:
+    title: 16th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=564062
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2002"
+  edition_2001:
+    title: 15th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=375658
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2001"
+  edition_2000:
+    title: 14th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=336146
+    venue: "Rome, Italy"
+    dates: "May 23-25, 2000"
+  edition_1999:
+    title: 13th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=301429
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1999"
+  edition_1998:
+    title: 12th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=278008
+    website: https://example.com
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1998"
+  edition_1997:
+    title: 11th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=268826
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1997"
+  edition_1996:
+    title: 10th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=238788
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1996"
+  edition_1995:
+    title: 9th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=214282
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1995"
+  edition_1994:
+    title: 8th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=182478
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1994"
+  edition_1993:
+    title: 7th Workshop on Parallel and Distributed Simulation
+    proceedings: https://dl.acm.org/citation.cfm?id=158459
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1993"
+  edition_1992:
+    title: 6th Workshop on Parallel and Distributed Simulation
+    proceedings: https://books.google.com/books/about/6th_Workshop_on_Parallel_and_Distributed.html?id=aWE_AQAAIAAJ
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1992"
+  edition_1991:
+    title: SCS Multiconference on Advances in Parallel and Distributed Simulation
+    proceedings: https://books.google.com/books?id=MawZAQAAIAAJ&source=gbs_similarbooks
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1991"
+  edition_1990:
+    title: SCS Multiconference on Advances in Parallel and Distributed Simulation
+    proceedings: https://books.google.com/books/about/Distributed_simulation.html?id=C6wZAQAAIAAJ
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1990"
+  edition_1989:
+    title: SCS Multiconference on Advances in Parallel and Distributed Simulation
+    proceedings: https://books.google.com/books?id=qakZAQAAIAAJ&source=gbs_similarbooks
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1989"
+  edition_1988:
+    title: SCS Multiconference on Advances in Parallel and Distributed Simulation
+    proceedings: https://books.google.com/books?id=YtEZAQAAIAAJ&source=gbs_similarbooks
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1988"
+  edition_1985:
+    title: SCS Conference on Distributed Simulation
+    venue: "Rome, Italy"
+    dates: "May 23-25, 1985"
+
+
+
+
+# You are not likely expected to touch below this line
+exclude: [README.md, LICENSE]
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+relative_links:
+  enabled:     true
+  collections: true
+
+sass:
+  style: compressed

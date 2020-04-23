@@ -1,0 +1,22 @@
+{%- comment -%}
+
+Use this include in the following way.
+Pictures should be placed in /assets/img/venues/.
+
+{% include banner.html     picture="Guy.brush" %}
+
+{%- endcomment -%}
+
+{% assign edition = site.collections | where: "label", page.collection | first %}
+{%- assign year = page.collection | split: "_" -%}
+{%- assign year = year[1] -%}
+
+<div class="center">
+    <div class="picture">
+        <img alt="PADS {{ year }} - {{ edition.venue }}" src="{{ '/assets/img/venues/' | append: include.picture | relative_url }}" /><br/>
+    </div>
+    <div style="text-align: center;">
+        <strong>{{ edition.venue }}</strong><br/>
+        <strong>{{ edition.dates }}</strong>
+    </div>
+</div>
