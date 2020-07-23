@@ -2,7 +2,7 @@ title: "SIGSIM PADS"
 description: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
 
 # Change this to the year which shall appear as "default" in the website
-current_year: 2020
+current_year: 2021
 
 # The following array is used to populate previous editions.
 # If the edition is hosted by this site, a corresponding _edition_20xx
@@ -16,12 +16,12 @@ collections:
     venue: "Somewhere in the world"
     dates: "June 1-2, 2021"
   edition_2020:
-    output: true
-    permalink: /2020/:name
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3384441
+    website: https://web.archive.org/web/20191228145515/http://www.acm-sigsim-pads.org/
     venue: "Miami, FL, USA"
     dates: "June 15-17, 2020"
   edition_2019:
-    proceedings: https://proceedings.com
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3316480
     website: https://web.archive.org/web/20190929201841/https://www.acm-sigsim-pads.org/
     venue: "Somewhere in the world"
     dates: "June 15-17, 2020"
