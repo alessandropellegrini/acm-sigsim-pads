@@ -14,16 +14,12 @@
 </head>
 {%- if page.collection -%}
 {%- assign pages = site[page.collection] -%}
-{%- else -%}
-{%- assign default_edition = "edition_" | append: site.current_year -%}
-{%- assign pages = site[default_edition] -%}
 {%- endif -%}
-{%- assign edition = site.collections | where: "label", page.collection | first -%}
-{%- assign year = page.collection | split: "_" -%}
-{%- assign year = year[1] -%}
+{% for coll in site.collections %}{% if coll.label == page.collection %}{% assign edition = coll %}{% endif %}{% endfor %}
+{%- assign year = page.collection -%}
 <body>
 <div class="wrapper">
-    <div class="slide-in" id="slide-in">
+    <div class="slide-in hidden" id="slide-in">
         <div class="slide-in-content">
             <a style="float: right;" onclick="slide();"><strong>x</strong></a><br/>
             <ul>
@@ -66,17 +62,17 @@
         <h1>{{ page.title }}</h1>
         {{ content }}
     </section>
-    <footer>
-        <p>
-            <small>Made with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &bullet;
-            Based on <a href="https://github.com/pages-themes/leap-day" target="_blank">Leap Day template</a></small><br/>
-            <small><a href="{{ site.github.repository_url }}" target="_blank">Contribute <img style="height:10px" src="{{ '/assets/img/octocat-logo.svg' | relative_url }}"></a></small>
-        </p>
-    </footer>
     <div style="text-align: center; margin-bottom: 10px;">
         <a href="https://www.acm.org/" target="_blank"><img src="{{ '/assets/img/acm-logo.svg' | relative_url }}"/></a>
         <a href="https://www.acm-sigsim-mskr.org/" target="_blank"><img src="{{ '/assets/img/sigsim.png' | relative_url }}"/></a>
     </div>
+    <footer>
+        <p>
+            <small>Made with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &bullet;
+                Based on <a href="https://github.com/pages-themes/leap-day" target="_blank">Leap Day template</a></small><br/>
+            <small><a href="{{ site.github.repository_url }}" target="_blank">Contribute <img style="height:10px" src="{{ '/assets/img/octocat-logo.svg' | relative_url }}"></a></small>
+        </p>
+    </footer>
 </div>
 
 </body>

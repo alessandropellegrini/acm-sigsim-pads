@@ -24,6 +24,10 @@
   -webkit-transform: translateX(0);
 }
 
+.slide-in.hidden {
+  display: none;
+}
+
 @media print, screen and (max-width: 1060px) {
   .slide-in {
     top: 160px;

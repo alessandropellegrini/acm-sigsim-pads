@@ -37,14 +37,28 @@ function fadeIn(elem, ms) {
 }
 
 function slide() {
-    document.querySelector('#slide-in').classList.toggle('show');
+    let container = document.querySelector('#slide-in');
     let button = document.querySelector('#menubutton');
 
     if (shown) {
         fadeOut(button, 200);
+        container.classList.toggle('hidden');
+        setTimeout(function () {
+            container.classList.toggle('show');
+            button.style.display = "none";
+        }, 5);
         shown = false;
     } else {
         fadeIn(button, 200);
+        container.classList.toggle('show');
+        container.addEventListener('transitionend', function(e) {
+            container.classList.toggle('hidden');
+            button.style.display = "block";
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
         shown = true;
     }
 }
