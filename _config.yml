@@ -9,11 +9,15 @@ current_year: 2021
 # folder is expected to be found, and `output: true` should be set.
 # Otherwise, `site` should point to the previous webpage (if available).
 # `proceedings` should point to the digital library page of the proceedings (if availbale).
+# `venue`, `location`, and `dates` allow to customize the edition website. The current
+# markdown files rely on them throughout the text, so if you clone the content of a past
+# edition and set these variables correctly, a good part of the site is already consistent.
 collections:
   edition_2021:
     output: true
     permalink: /2021/:name
     venue: "Somewhere in the world"
+    location: "The Best Conference Center"
     dates: "June 1-2, 2021"
   edition_2020:
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3384441

@@ -11,7 +11,7 @@ title: "ACM SIGSIM PADS 2021"
 
 ---
 
-The {{ year }} ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (ACM SIGSIM PADS) will take place at Florida International University, Biscayne Bay Campus, Wolfe University Center on {{ edition.dates }} in {{ edition.venue }}.
+The {{ year }} ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (ACM SIGSIM PADS) will take place at {{ edition.location }} on {{ edition.dates }} in {{ edition.venue }}.
 
 The annual PADS conference has a long history dating back to 1985. The conference was formerly known under the name Principles of Advanced and Distributed Simulation, and before that simply Parallel and Distributed Simulation. Over the years PADS has broadened its scope beyond its origins in parallel and distributed simulation and now encompasses virtually all research that lies at the intersection of the computer science and the modeling and simulation fields. Specifically, many research topics not related to parallel or distributed model execution are now included.
 
