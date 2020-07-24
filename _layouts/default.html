@@ -14,6 +14,9 @@
 </head>
 {%- if page.collection -%}
 {%- assign pages = site[page.collection] -%}
+{%- else -%}
+{%- capture year -%}{{site.current_year}}{%- endcapture -%}
+{%- assign pages = site[year] -%}
 {%- endif -%}
 {% for coll in site.collections %}{% if coll.label == page.collection %}{% assign edition = coll %}{% endif %}{% endfor %}
 {%- assign year = page.collection -%}
