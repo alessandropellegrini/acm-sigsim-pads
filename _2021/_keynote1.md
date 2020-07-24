@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Keynote: Practical PDES: Using PDES to Better Understand HPC Systems"
-permalink: /:year/program/keynote1
+permalink: /:collection/program/keynote1
 ---
 
 {% include large-guy.html   name="Robert B. Ross"

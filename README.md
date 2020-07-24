@@ -6,15 +6,15 @@ It is now time to start the work for a new edition of PADS. The organization com
 How complicated it can be?    
 It's a 30 seconds job! Just:
 
-* create a new folder `_edition_20xx` for the new year
+* create a new folder `_20xx` for the new year
 * open `_config.yml` and:
   - update the `current_year` variable to the `20xx` new year
   - in the `collections` array, create at the top a new entry for the new edition, like:
 
 ```yaml
-edition_20xx:
+'20xx':
   output: true
-  permalink: /20xx/:name
+  permalink: /:collection/:title
 ```
 
 That's it! If you regenerate, the website already points to the new edition which is, of course, empty. You might want to start from copying the content of the now-past edition from previous year, and start modifying.

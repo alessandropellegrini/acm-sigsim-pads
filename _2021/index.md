@@ -3,13 +3,12 @@ layout: default
 title: "ACM SIGSIM PADS 2021"
 ---
 
-{% assign edition = site.collections | where: "label", page.collection | first %}
-{%- assign year = page.collection | split: "_" -%}
-{%- assign year = year[1] -%}
-
 {% include banner.html     picture="miami.jpg" %}
 
 ---
+
+{% for coll in site.collections %}{% if coll.label == page.collection %}{% assign edition = coll %}{% endif %}{% endfor %}
+{%- assign year = page.collection -%}
 
 The {{ year }} ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (ACM SIGSIM PADS) will take place at {{ edition.location }} on {{ edition.dates }} in {{ edition.venue }}.
 
@@ -18,8 +17,7 @@ The annual PADS conference has a long history dating back to 1985. The conferenc
 SIGSIM PADS provides a unique forum for reporting and discussing research results and important topics of interest to the M&S community. SIGSIM PADS is the flagship conference of ACM's Special Interest Group on Simulation and Modeling (SIGSIM) and is fully sponsored by that organization.
 
 {% assign moreinfo = "The SIGSIM PADS Community is thankful to Prof. Osman Balci for having served for several years as the webmaster of the conference. Thanks Osman for having kept us all connected!" | split: '|' %}
-{% include guy.html     
-                        picture="OsmanBalci.jpg"
+{% include guy.html     picture="OsmanBalci.jpg"
                         additional_lines=moreinfo %}
 
 ## TOMACS

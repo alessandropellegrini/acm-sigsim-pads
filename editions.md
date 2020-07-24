@@ -6,8 +6,7 @@ title: "Other Editions"
 {% assign editions = site.collections | sort: 'label' | reverse %}
 {% for edition in editions %}
 {% if edition.label != "posts" %}
-{%- assign year = edition.label | split: "_" -%}
-{%- assign year = year[1] -%}
+{%- assign year = edition.label %}
 {%- assign year_int = year | to_integer -%}
 {%- assign links = '' | split: ',' -%}
 {%- if edition.proceedings %}
