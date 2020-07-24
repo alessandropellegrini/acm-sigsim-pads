@@ -21,8 +21,8 @@ Pictures should be placed in /assets/img/people/.
     </div>
     <div class="info">
         <p>
-            <a href="{{ include.url }}" target="_blank">{{ include.name }}</a><br/>
-            {{ include.role }}<br/>
+            {% if include.name %}<a href="{{ include.url }}" target="_blank">{{ include.name }}</a><br/>{%- endif -%}
+            {% if include.role %}{{ include.role }}<br/>{%- endif -%}
             {% for line in include.additional_lines %}
             {{ line }}<br/>
             {%- endfor -%}
