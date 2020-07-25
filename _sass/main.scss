@@ -66,7 +66,7 @@ section .editions li {
 
 strong {
   font-weight: bold;
-  color: #333;
+  color: #666666;
 }
 
 .wrapper {
@@ -331,7 +331,7 @@ nav {
     line-height:24px;
 
     li {
-      padding: 5px 0px;
+      padding: 5px 0;
       line-height: 16px;
 
       &.tag-h1 {
@@ -434,6 +434,20 @@ footer {
     .menubutton {
       display: none;
     }
+  }
+
+  .image-left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+  }
+
+  .image-right {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
   }
 }
 
