@@ -1,7 +1,7 @@
 
 ## How to start a new edition
 
-It is now time to start the work for a new edition of PADS. The organization committee has been decided, and it's time to refect new year's information in the website. Of course, we do not want to destroy the history of the website, and "freeze" current year website. Also, we do want to generate a link to the now-previous year edition of PADS.
+It is now time to start the work for a new edition of PADS. The organization committee has been decided, and it's time to reflect new year's information in the website. Of course, we do not want to destroy the history of the website, and "freeze" current year website. Also, we do want to generate a link to the now-previous year edition of PADS.
 
 How complicated it can be?    
 It's a 30 seconds job! Just:
