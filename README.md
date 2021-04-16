@@ -23,7 +23,7 @@ That's it! If you regenerate, the website already points to the new edition whic
 
 The following variables are supported for an edition:
 
-* `output`: if set to `true`, the pages for the corresponding `_edition_20xx` are generated.
+* `output`: if set to `true`, the pages for the corresponding `_20xx` edition are generated.
 * `permalink`: for editions supported by this engine, for consistency it should be set to `/20xx/:name`
 * `title`: set it to the name of the conference (to be used in the "other editions" page), like: `17th ACM/IEEE/SCS Workshop on Principles of Advanced and Distributed Simulation`
 * `proceedings`: a link to the official proceedings
