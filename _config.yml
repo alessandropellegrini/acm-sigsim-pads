@@ -5,10 +5,10 @@ description: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
 current_year: 2021
 
 # The following array is used to populate previous editions.
-# If the edition is hosted by this site, a corresponding _edition_20xx
+# If the edition is hosted by this site, a corresponding _20xx
 # folder is expected to be found, and `output: true` should be set.
 # Otherwise, `site` should point to the previous webpage (if available).
-# `proceedings` should point to the digital library page of the proceedings (if availbale).
+# `proceedings` should point to the digital library page of the proceedings (if available).
 # `venue`, `location`, and `dates` allow to customize the edition website. The current
 # markdown files rely on them throughout the text, so if you clone the content of a past
 # edition and set these variables correctly, a good part of the site is already consistent.
