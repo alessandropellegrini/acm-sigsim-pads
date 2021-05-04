@@ -2,9 +2,9 @@
 
 ## How to start a new edition
 
-It is now time to start the work for a new edition of PADS. The organization committee has been decided, and it's time to reflect new year's information in the website. Of course, we do not want to destroy the history of the website, and "freeze" current year website. Also, we do want to generate a link to the now-previous year edition of PADS.
+It is now time to start the work for a new edition of PADS. The organizing committee has been appointed, and it's time to reflect new year's information in the website. Of course, we do not want to destroy the history of the website, and "freeze" current year website. Also, we do want to generate a link to the now-previous year edition of PADS.
 
-How complicated it can be?    
+How complicated can it be?    
 It's a 30 seconds job! Just:
 
 * create a new folder `_20xx` for the new year
@@ -18,9 +18,9 @@ It's a 30 seconds job! Just:
   permalink: /:collection/:title
 ```
 
-That's it! If you regenerate, the website already points to the new edition which is, of course, empty. You might want to start from copying the content of the now-past edition from previous year, and start modifying.
+That's it! If you regenerate it, the website already points to the new edition which is, of course, empty. You might want to start from copying the content of the now-past edition from previous year, and start modifying.
 
-### Important Dates
+### A note on "Important Dates"
 
 The important dates table typically appears in many pages. To ensure consistency, the demo content relies on a dedicated file (`_important_dates.md`) which is then included into all other relevant pages. This ensures that if a change is made to the dates, it is immediately reflected in all the other pages.
 
@@ -35,6 +35,8 @@ The following variables are supported for an edition:
 * `website`: a link to the website of the edition. If not set and `output`: `true`, the the link to the correct edition in this engine is automatically generated.
 * `venue`: the location of the conference, to be shown in all edition pages
 * `dates`: the dates of the conference, to be shown in all edition pages
+
+Any additional variable can be included in `_config.yml` to ease the management.
 
 ## Menu Order and Unpiblished Pages
 
