@@ -16,9 +16,9 @@ collections:
   '2022':
     output: true
     permalink: /:collection/:title
-    venue: "Somewhere in the world"
-    location: "The Best Conference Center"
-    dates: "June 1-2, 2021"
+    venue: "Atlanta, GA, USA"
+    location: "GeorgiaTech"
+    dates: "June 1-2, 2022"
   '2021':
     website: https://web.archive.org/web/20210421225351/https://www.acm-sigsim-pads.org/
     venue: "Suffolk, VA, USA"

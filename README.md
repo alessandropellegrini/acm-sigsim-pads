@@ -24,6 +24,7 @@ That's it! If you regenerate it, the website already points to the new edition w
 
 The important dates table typically appears in many pages. To ensure consistency, the demo content relies on a dedicated file (`_important_dates.md`) which is then included into all other relevant pages. This ensures that if a change is made to the dates, it is immediately reflected in all the other pages.
 
+
 ## Configuration variables for an edition
 
 The following variables are supported for an edition:
@@ -38,11 +39,18 @@ The following variables are supported for an edition:
 
 Any additional variable can be included in `_config.yml` to ease the management.
 
-## Menu Order and Unpiblished Pages
+
+## Menu Order and Unpublished Pages
 
 The order of links in the menu follows the names of the pages in an edition folder. Files can be renamed to sort them accordingly.
 
-If you need to prepare a page, but you do not want to show it in the menu, you can name the corresponding file starting with a "_": It will not be rendered in the website.
+If you have a page ready, but you do not want to show it in the menu, you can name the corresponding file starting with a "_": It will not be rendered in the website.
+Conversely, if you want the webpage to be rendered, but you want to hide the link from the menu, you can add the following line to the yaml header in the corresponding markdown file: 
+
+```yaml
+menu_show: true
+```
+
 
 ## Jekyll Dependencies and Local Preview
 
