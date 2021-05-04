@@ -1,3 +1,4 @@
+# PADS Website
 
 ## How to start a new edition
 
@@ -19,6 +20,10 @@ It's a 30 seconds job! Just:
 
 That's it! If you regenerate, the website already points to the new edition which is, of course, empty. You might want to start from copying the content of the now-past edition from previous year, and start modifying.
 
+### Important Dates
+
+The important dates table typically appears in many pages. To ensure consistency, the demo content relies on a dedicated file (`_important_dates.md`) which is then included into all other relevant pages. This ensures that if a change is made to the dates, it is immediately reflected in all the other pages.
+
 ## Configuration variables for an edition
 
 The following variables are supported for an edition:
@@ -31,10 +36,23 @@ The following variables are supported for an edition:
 * `venue`: the location of the conference, to be shown in all edition pages
 * `dates`: the dates of the conference, to be shown in all edition pages
 
-## Jekyll dependencies
+## Menu Order and Unpiblished Pages
 
-These are the plugins which are used in this website:
+The order of links in the menu follows the names of the pages in an edition folder. Files can be renamed to sort them accordingly.
+
+If you need to prepare a page, but you do not want to show it in the menu, you can name the corresponding file starting with a "_": It will not be rendered in the website.
+
+## Jekyll Dependencies and Local Preview
+
+The website is statically built using [Jekyll](https://jekyllrb.com/).
+These are the plugins which are used in this website. They are supported out of the box on GitHub pages. 
 
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-relative-links
+
+If you want a local preview of the website, just launch this command in the cloned folder:
+
+```bash
+jekyll serve
+```

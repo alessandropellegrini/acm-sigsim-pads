@@ -2,7 +2,7 @@ title: "SIGSIM PADS"
 description: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
 
 # Change this to the year which shall appear as "default" in the website
-current_year: 2021
+current_year: 2022
 
 # The following array is used to populate previous editions.
 # If the edition is hosted by this site, a corresponding _20xx
@@ -13,12 +13,16 @@ current_year: 2021
 # markdown files rely on them throughout the text, so if you clone the content of a past
 # edition and set these variables correctly, a good part of the site is already consistent.
 collections:
-  '2021':
+  '2022':
     output: true
     permalink: /:collection/:title
     venue: "Somewhere in the world"
     location: "The Best Conference Center"
     dates: "June 1-2, 2021"
+  '2021':
+    website: https://web.archive.org/web/20210421225351/https://www.acm-sigsim-pads.org/
+    venue: "Suffolk, VA, USA"
+    dates: "May 31-June 2, 2021"
   '2020':
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3384441
     website: https://web.archive.org/web/20191228145515/http://www.acm-sigsim-pads.org/
